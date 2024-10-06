@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Jogos de Tabuleiro</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <h1 class="page-title">Aluguel de <span class="page-title__emphasis">boardgames</span></h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="img/monopoly.png" alt="Capa jogo Monopoly">
+                    </div>
+                    <p class="dashboard__item__name">Monopoly</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="img/ticket_to_ride.png" alt="Capa jogo Ticket to Ride">
+                    </div>
+                    <p class="dashboard__item__name">Ticket to Ride</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Alugar</a>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="img/war.png" alt="Capa jogo war">
+                    </div>
+                    <p class="dashboard__item__name">War</p>
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
